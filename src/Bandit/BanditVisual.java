@@ -148,7 +148,7 @@ public class BanditVisual {
 		}
 		list.set(0, frn1);
 		System.out.println(Arrays.asList(list));
-		IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn1 + ".png")));
+		IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn1 + ".png")));
 		checkIfWinNudge();
 		logGame("Nudge One: ");
 		list.clear();
@@ -161,7 +161,7 @@ public class BanditVisual {
 		}
 		list.set(1, frn2);
 		System.out.println(Arrays.asList(list));
-		IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn2 + ".png")));
+		IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn2 + ".png")));
 		checkIfWinNudge();
 		logGame("Nudge Two: ");
 		list.clear();
@@ -174,7 +174,7 @@ public class BanditVisual {
 		}
 		list.set(2, frn3);
 		System.out.println(Arrays.asList(list));
-		IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn3 + ".png")));
+		IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img" + frn3 + ".png")));
 		checkIfWinNudge();
 		logGame("Nudge Three: ");
 		list.clear();
@@ -210,11 +210,11 @@ public class BanditVisual {
 				spin1 = new Timer(300, new ActionListener() {
 					public int counter;   
 				    public void actionPerformed(ActionEvent e) {
-				    	IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + Bandit.GenerateNumber1(1) + ".png")));
+				    	IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + Bandit.GenerateNumber1(1) + ".png")));
 				        counter++;
 				        //Beep();
 				        if (counter == 16) {
-				        	IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn1 + ".png")));
+				        	IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn1 + ".png")));
 				        	// Icongrey1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + gfrn1 + "g.png")));
 				            spin1.stop();
 				        } 
@@ -222,7 +222,7 @@ public class BanditVisual {
 				});
 				spin1.start();
 				if (spin1.isRunning()) {
-					IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn1 + ".png")));
+					IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn1 + ".png")));
 					// Icongrey1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + gfrn1 + "g.png")));
 				}
 				list.clear();
@@ -243,11 +243,11 @@ public class BanditVisual {
 				spin2 = new Timer(300, new ActionListener() {
 					public int counter;   
 				    public void actionPerformed(ActionEvent e) {
-				    	IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + Bandit.GenerateNumber1(2) + ".png")));
+				    	IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + Bandit.GenerateNumber1(2) + ".png")));
 				        counter++;
 				        //Beep();
 				        if (counter == 20) {
-				        	IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn2 + ".png")));
+				        	IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn2 + ".png")));
 				        	// Icongrey1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + gfrn1 + "g.png")));
 				            spin2.stop();
 				        }   
@@ -255,7 +255,7 @@ public class BanditVisual {
 				});
 				spin2.start();
 				if (spin2.isRunning()) {
-					IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn2 + ".png")));
+					IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn2 + ".png")));
 					// Icongrey2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + gfrn2 + "g.png")));
 				}
 				list.clear();
@@ -276,11 +276,11 @@ public class BanditVisual {
 				spin3 = new Timer(300, new ActionListener() {
 					public int counter;   
 				    public void actionPerformed(ActionEvent e) {
-				    	IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + Bandit.GenerateNumber1(3) + ".png")));
+				    	IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + Bandit.GenerateNumber1(3) + ".png")));
 				        counter++;
 				        Beep();
 				        if (counter == 24) {
-				        	IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn3 + ".png")));
+				        	IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn3 + ".png")));
 				        	// Icongrey1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + gfrn1 + "g.png")));
 				            spin3.stop();
 				        }
@@ -288,7 +288,7 @@ public class BanditVisual {
 				});
 				spin3.start();
 				if (spin3.isRunning()) {
-					IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn3 + ".png")));
+					IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn3 + ".png")));
 					// Icongrey3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + gfrn3 + "g.png")));
 				}
 			} else {
@@ -477,18 +477,18 @@ public class BanditVisual {
      	spin1replay = new Timer(600, new ActionListener() {
      	public int counter;   
      	public void actionPerformed(ActionEvent e) {
-     		IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + Bandit.GenerateNumber1(1) + ".png")));
+     		IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + Bandit.GenerateNumber1(1) + ".png")));
      		counter++;
      		//Beep();
      		if (counter == 16) {
-     			IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn1 + ".png")));
+     			IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn1 + ".png")));
      			spin1replay.stop();
      		} 
      	}
      	});
      	spin1replay.start();
      		if (spin1replay.isRunning()) {
-     				IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn1 + ".png")));
+     				IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn1 + ".png")));
      			}
      		
      		//spin2replay
@@ -502,18 +502,18 @@ public class BanditVisual {
          	spin2replay = new Timer(600, new ActionListener() {
          	public int counter;   
          	public void actionPerformed(ActionEvent e) {
-         		IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + Bandit.GenerateNumber1(2) + ".png")));
+         		IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + Bandit.GenerateNumber1(2) + ".png")));
          		counter++;
          		//Beep();
          		if (counter == 16) {
-         			IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn2 + ".png")));
+         			IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn2 + ".png")));
          			spin2replay.stop();
          		} 
          	}
          	});
          	spin2replay.start();
          		if (spin2replay.isRunning()) {
-         				IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn2 + ".png")));
+         				IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn2 + ".png")));
          			}
          		
          		
@@ -528,11 +528,11 @@ public class BanditVisual {
              	spin3replay = new Timer(600, new ActionListener() {
              	public int counter;   
              	public void actionPerformed(ActionEvent e) {
-             		IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + Bandit.GenerateNumber1(3) + ".png")));
+             		IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + Bandit.GenerateNumber1(3) + ".png")));
              		counter++;
              		//Beep();
              		if (counter == 16) {
-             			IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn3 + ".png")));
+             			IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn3 + ".png")));
              			spin3replay.stop();
              			lblReplay.setVisible(false);
              		} 
@@ -540,7 +540,7 @@ public class BanditVisual {
              	});
              	spin3replay.start();
              		if (spin3replay.isRunning()) {
-             				IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/" + frn3 + ".png")));
+             				IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/" + frn3 + ".png")));
              			}
              btnViewReplay.setVisible(false);
 	}
@@ -551,13 +551,13 @@ public class BanditVisual {
 		frmOneArmBandit.setBackground(SystemColor.inactiveCaption);
 		frmOneArmBandit.setForeground(SystemColor.desktop);
 		frmOneArmBandit.setTitle("One Arm Bandit");
-		frmOneArmBandit.setIconImage(Toolkit.getDefaultToolkit().getImage(BanditVisual.class.getResource("/Bandit/oab.png")));
+		frmOneArmBandit.setIconImage(Toolkit.getDefaultToolkit().getImage(BanditVisual.class.getResource("/Bandit/img/oab.png")));
 		frmOneArmBandit.setBounds(100, 100, 807, 502);
 		frmOneArmBandit.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmOneArmBandit.getContentPane().setLayout(null);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/slots-3000.png")));
+		label.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/slots-3000.png")));
 		label.setBounds(21, 11, 319, 120);
 		frmOneArmBandit.getContentPane().add(label);
 		
@@ -594,7 +594,7 @@ public class BanditVisual {
 		panel_3.setLayout(null);
 		
 		IconBox1.setBounds(0, 0, 75, 75);
-		IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/1.png")));
+		IconBox1.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/1.png")));
 		panel_3.add(IconBox1);
 		IconBox1.setHorizontalAlignment(SwingConstants.CENTER);
 		
@@ -610,7 +610,7 @@ public class BanditVisual {
 		IconBox2.setHorizontalAlignment(SwingConstants.CENTER);
 		IconBox2.setBounds(0, 0, 75, 75);
 		panel_4.add(IconBox2);
-		IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/2.png")));
+		IconBox2.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/2.png")));
 		
 		JPanel panel_5 = new JPanel();
 		panel_5.setBorder(new MatteBorder(2, 2, 2, 2, (Color) new Color(204, 204, 204)));
@@ -623,7 +623,7 @@ public class BanditVisual {
 		IconBox3.setHorizontalAlignment(SwingConstants.CENTER);
 		IconBox3.setBounds(0, 0, 75, 75);
 		panel_5.add(IconBox3);
-		IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/3.png")));
+		IconBox3.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/3.png")));
 		
 		JButton btnExit = new JButton("Exit");
 		btnExit.addActionListener(new ActionListener() {
@@ -649,7 +649,7 @@ public class BanditVisual {
 		JButton btnucx = new JButton("");
 		btnucx.setFocusPainted(false);
 		btnucx.setToolTipText("Transfer Winnings");
-		btnucx.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/arrows1.png")));
+		btnucx.setIcon(new ImageIcon(BanditVisual.class.getResource("/Bandit/img/arrows1.png")));
 		btnucx.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (Bandit.setWinningCredit().compareTo(BigDecimal.ZERO) <= 0.00) {
